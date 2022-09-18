@@ -1,0 +1,31 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: "Poppins", "Arial", sans-serif;
+    @include sticky-footer;
+}
+
+/* STICKY-FOOTER */
+.site-main {
+    flex-grow: 1;
+}

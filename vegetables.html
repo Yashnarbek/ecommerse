@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="site-main">
+        <section class="vegetables">
+            <div class="container">
+                <div class="vegetables-top">
+                    <div class="link-wrapper d-flex justify-content-center justify-content-md-start pt-2 pb-2">
+                        <a class="page-link home-page me-2" href="index.html">Homepage</a>
+                        <a class="page-link vegetables-page" href="vegetables.html">Fruit and vegetables</a>
+                    </div>
+                    <div class="vegetebles-nav d-md-flex align-items-center justify-content-between mb-4">
+                        <h2 class="vegetables-heading">Fruit and vegetables</h2>
+                        <ul class="vegetables-nav-box list-unstyled d-flex justify-content-center mb-0">
+                            <li class="vegetebles-nav-item">
+                                <a class="vegetables-nav-link bg-active" href="#card">Grid view</a>
+                            </li>
+                            <li class="vegetebles-nav-item ms-3 me-3">
+                                <a class="vegetables-nav-link list-wiew" href="#product">List view</a>
+                            </li>
+                            <li class="vegetebles-nav-item">
+                                <a class="vegetables-link product-link" href="#">Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="change d-md-flex mb-3">
+                        <div class="radio-box d-flex p-2 mb-3 mb-md-0 me-md-3">
+                            <div class="form-check me-3 ">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Filtre text
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Filtre text
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrapper d-flex justify-content-center mb-3 mb-md-0 me-md-3">
+                            <div class="form-check checkbox-input me-3 d-flex align-items-center p-2">
+                                <input class="form-check-input ms-0 me-2" type="checkbox" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Filtre
+                                </label>
+                                <p class="form-check-text">Nbm</p>
+                            </div>
+                            <div class="form-check checkbox-input d-flex align-items-center p-2">
+                                <input class="form-check-input ms-0 me-2" type="checkbox" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Filtre
+                                </label>
+                                <p class="form-check-text">Nbm</p>
+                            </div>
+                        </div>
+                        <div class="form-check select-box p-2    d-flex align-items-center">
+                            <input class="form-check-input ms-0 me-3" type="checkbox" id="filtre">
+                            <label class="form-check-label" for="filtre">
+                                Filtre
+                            </label>
+                            <p class="form-check-text">Nbm</p>
+                            <select class="form-select form-select-sm border-0 pt-0 pb-0" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="selected-list list-unstyled d-flex">
+                        <li class="selected-item me-2">
+                            <a class="selected-link selected-link-applied d-flex" href="#products">Applied filtres:</a>
+                        </li>
+                        <li class="selected-item me-2">
+                            <a class="selected-link selected-link-filtre d-flex" href="#card">Selected Filtre</a>
+                        </li>
+                        <li class="selected-item">
+                            <a class="selected-link selected-link-filtre d-flex" href="#">Selected Filtre</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vegetables-bottom-wrapper d-md-flex">
+                    <div class="categories p-3">
+                        <ul class="categories-list list-unstyled">
+                            <li class="categories-title mb-5">
+                                <strong class="categories-name d-inline-block mb-3">Categories</strong>
+                                <ul class="categories-title-list list-unstyled">
+                                    <li class="categories-title-name-box d-flex justify-content-between align-items-center mb-2">
+                                        <span class="categories-title-name">Category name</span>
+                                        <span class="categories-title-number">320</span>
+                                    </li>
+                                    <li class="categories-title-name-box d-flex justify-content-between align-items-center mb-2">
+                                        <span class="categories-title-name">Category name</span>
+                                        <span class="categories-title-number">112</span>
+                                    </li>
+                                    <li class="categories-title-name-box d-flex justify-content-between align-items-center mb-2">
+                                        <span class="categories-title-name">Category name</span>
+                                        <span class="categories-title-number">32</span>
+                                    </li>
+                                    <li class="categories-title-name-box d-flex justify-content-between align-items-center mb-2">
+                                        <span class="categories-title-name">Category name</span>
+                                        <span class="categories-title-number">48</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categories-title mb-4">
+                                <strong class="categories-name mb-2 d-inline-block">Brands</strong>
+                                <ul class="categories-title-checkbox-list list-unstyled">
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="brand">
+                                            <label class="form-check-label" for="brand">
+                                                Default checkbox
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="brand2">
+                                            <label class="form-check-label" for="brand2">
+                                                Default checkbox
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="brand3">
+                                            <label class="form-check-label" for="brand3">
+                                                Default checkbox
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                            <label class="form-check-label" for="brand4">
+                                                Default checkbox
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="brand5">
+                                            <label class="form-check-label" for="brand5">
+                                                Default checkbox
+                                            </label>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categories-title mb-4">
+                                <strong class="categories-name mb-2 d-inline-block">Rating</strong>
+                                <ul class="categories-title-star list-unstyled">
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="star">
+                                            <label class="form-check-label" for="star">
+                                                <span class="star-box">
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="star2">
+                                            <label class="form-check-label" for="star2">
+                                                <span class="star-box">
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="star3">
+                                            <label class="form-check-label" for="star3">
+                                                <span class="star-box">
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="star4">
+                                            <label class="form-check-label" for="star4">
+                                                <span class="star-box">
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </form>
+                                    </li>
+                                    <li class="categories-title-checkbox">
+                                        <form class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="star5">
+                                            <label class="form-check-label" for="star5">
+                                                <span class="star-box">
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                    <span class="star">
+                                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categories-title">
+                                <strong class="categories-name">Price</strong>
+                                <input class="form-check price-input" type="range" name="user_range" id="price">
+                                <div class="buttons-box mb-3">
+                                    <button type="button" class="btn btn-light min-max p-2">0</button>
+                                    <button type="button" class="btn btn-light min-max p-2">000</button>
+                                </div>
+                                <div class="apply-box">
+                                    <button class="apply ps-3 pe-3 pt-2 pb-2">Apply</button>
+                                    <button class="reset">Reset</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="product-list list-unstyled ms-auto" id="product">
+                        <li class="product-title d-lg-flex">
+                            <div class="product-title-wrapper d-md-flex">
+                                <div class="title">
+                                    <strong class="product-title-name">Product title</strong>
+                                    <p class="product-title-text">Space for a small product description</p>
+                                    <ul class="product-star list-unstyled d-flex">
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                    </ul>
+                                    <ul class="product-bottom-list list-unstyled">
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Fresheness</span>
+                                            <span class="product-bottom-item-text">New (Extra fresh)</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Farm</span>
+                                            <span class="product-bottom-item-text">Grocery Tarm Fields</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Delivery</span>
+                                            <span class="product-bottom-item-text">Europe</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Stock</span>
+                                            <span class="product-bottom-item-text">320 pcs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cost d-flex flex-column align-items-start">
+                                    <strong class="cost-heading d-block">36.99 USD</strong>
+                                    <del class="old-cost mb-3">48.56</del>
+                                    <p class="free-shopping mb-0">Free Shipping</p>
+                                    <span class="delivery">Delivery in 1 day</span>
+                                    <a href="#" class="product-detail btn mb-2">Product Detail</a>
+                                    <button type="button" class="btn-light wish">Add to wish list</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-title d-lg-flex">
+                            <div class="product-title-wrapper d-md-flex">
+                                <div class="title">
+                                    <strong class="product-title-name">Product title</strong>
+                                    <p class="product-title-text">Space for a small product description</p>
+                                    <ul class="product-star list-unstyled d-flex">
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                    </ul>
+                                    <ul class="product-bottom-list list-unstyled">
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Fresheness</span>
+                                            <span class="product-bottom-item-text">New (Extra fresh)</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Farm</span>
+                                            <span class="product-bottom-item-text">Grocery Tarm Fields</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Delivery</span>
+                                            <span class="product-bottom-item-text">Europe</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Stock</span>
+                                            <span class="product-bottom-item-text">320 pcs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cost d-flex flex-column align-items-start">
+                                    <strong class="cost-heading d-block">36.99 USD</strong>
+                                    <del class="old-cost mb-3">48.56</del>
+                                    <p class="free-shopping mb-0">Free Shipping</p>
+                                    <span class="delivery">Delivery in 1 day</span>
+                                    <a href="#" class="product-detail btn mb-2">Product Detail</a>
+                                    <button type="button" class="btn-light wish">Add to wish list</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-title d-lg-flex">
+                            <div class="product-title-wrapper d-md-flex">
+                                <div class="title">
+                                    <strong class="product-title-name">Product title</strong>
+                                    <p class="product-title-text">Space for a small product description</p>
+                                    <ul class="product-star list-unstyled d-flex">
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                    </ul>
+                                    <ul class="product-bottom-list list-unstyled">
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Fresheness</span>
+                                            <span class="product-bottom-item-text">New (Extra fresh)</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Farm</span>
+                                            <span class="product-bottom-item-text">Grocery Tarm Fields</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Delivery</span>
+                                            <span class="product-bottom-item-text">Europe</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Stock</span>
+                                            <span class="product-bottom-item-text">320 pcs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cost d-flex flex-column align-items-start">
+                                    <strong class="cost-heading d-block">36.99 USD</strong>
+                                    <del class="old-cost mb-3">48.56</del>
+                                    <p class="free-shopping mb-0">Free Shipping</p>
+                                    <span class="delivery">Delivery in 1 day</span>
+                                    <a href="#" class="product-detail btn mb-2">Product Detail</a>
+                                    <button type="button" class="btn-light wish">Add to wish list</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-title d-lg-flex">
+                            <div class="product-title-wrapper d-md-flex">
+                                <div class="title">
+                                    <strong class="product-title-name">Product title</strong>
+                                    <p class="product-title-text">Space for a small product description</p>
+                                    <ul class="product-star list-unstyled d-flex">
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                    </ul>
+                                    <ul class="product-bottom-list list-unstyled">
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Fresheness</span>
+                                            <span class="product-bottom-item-text">New (Extra fresh)</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Farm</span>
+                                            <span class="product-bottom-item-text">Grocery Tarm Fields</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Delivery</span>
+                                            <span class="product-bottom-item-text">Europe</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Stock</span>
+                                            <span class="product-bottom-item-text">320 pcs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cost d-flex flex-column align-items-start">
+                                    <strong class="cost-heading d-block">36.99 USD</strong>
+                                    <del class="old-cost mb-3">48.56</del>
+                                    <p class="free-shopping mb-0">Free Shipping</p>
+                                    <span class="delivery">Delivery in 1 day</span>
+                                    <a href="#" class="product-detail btn mb-2">Product Detail</a>
+                                    <button type="button" class="btn-light wish">Add to wish list</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-title d-lg-flex">
+                            <div class="product-title-wrapper d-md-flex">
+                                <div class="title">
+                                    <strong class="product-title-name">Product title</strong>
+                                    <p class="product-title-text">Space for a small product description</p>
+                                    <ul class="product-star list-unstyled d-flex">
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                        <li class="product-star-item">
+                                            <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </li>
+                                    </ul>
+                                    <ul class="product-bottom-list list-unstyled">
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Fresheness</span>
+                                            <span class="product-bottom-item-text">New (Extra fresh)</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Farm</span>
+                                            <span class="product-bottom-item-text">Grocery Tarm Fields</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Delivery</span>
+                                            <span class="product-bottom-item-text">Europe</span>
+                                        </li>
+                                        <li class="product-bottom-item">
+                                            <span class="product-bottom-item-title">Stock</span>
+                                            <span class="product-bottom-item-text">320 pcs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cost d-flex flex-column align-items-start">
+                                    <strong class="cost-heading d-block">36.99 USD</strong>
+                                    <del class="old-cost mb-3">48.56</del>
+                                    <p class="free-shopping mb-0">Free Shipping</p>
+                                    <span class="delivery">Delivery in 1 day</span>
+                                    <a href="#" class="product-detail btn mb-2">Product Detail</a>
+                                    <button type="button" class="btn-light wish">Add to wish list</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="relathed-list list-unstyled d-flex flex-wrap justify-content-around col-9 d-none" id="card">
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <span class="star-box">
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy">
+                                        <span class="relathed-link-cost">1.48 USD</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description</p>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy d-flex flex-column d-flex flex-column">
+                                        <span class="relathed-link-cost">0.28 USD</span>
+                                        <span class="last-cost">48.56</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <span class="star-box">
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy d-flex flex-column">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                        <span class="last-cost">48.56</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <span class="star-box">
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy d-flex flex-column">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                        <span class="last-cost">48.56</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy d-flex flex-column">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                        <span class="last-cost">48.56</span> 
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <span class="star-box">
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy d-flex flex-column">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <span class="star-box">
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="yellow" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <span class="star">
+                                        <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.948 1.127a.72.72 0 0 1 1.374 0l1.24 3.813h4a.727.727 0 0 1 .426 1.333l-3.246 2.354 1.24 3.82a.72.72 0 0 1-1.114.806l-3.253-2.38-3.247 2.36a.72.72 0 0 1-1.113-.806l1.24-3.82-3.247-2.354a.727.727 0 0 1 .427-1.333h4l1.273-3.793Z" stroke="#D1D1D1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="relathed-item">
+                            <a class="relathed-link" href="#">
+                                <h3 class="relathed-item-heading">Product Title</h3>
+                                <p class="relathed-item-title">Space for a small product description </p>
+                                <div class="relathed-item-bottom d-flex flex-wrap justify-content-between">
+                                    <div class="relathed-link-buy">
+                                        <span class="relathed-link-cost">1.12 USD</span>
+                                    </div>
+                                    <button class="buy-now">Buy now</button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show-more">
+                    <div class="d-flex align-items-center justify-content-md-between flex-column flex-md-row">
+                        <div class="d-flex align-items-center">
+                            <p class="text-secondary me-2 mb-0">Page:</p>
+                            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item active me-2 text-success" aria-current="page">1</li>
+                                    <li class="breadcrumb-item"><a class="text-decoration-none text-black" href="#">2</a></li>
+                                    <li class="breadcrumb-item"><a class="text-decoration-none text-black" href="#">3</a></li>
+                                    <li class="breadcrumb-item"><a class="text-decoration-none text-black" href="#">4</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="btn-group dropend">
+                            <button type="button" class="product-detail btn mb-2">Show more products</button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a class="text-decoration-none badge light-green text-success me-1">198</a>
+                            <p class="text-secondary mb-0">articles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="./bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
